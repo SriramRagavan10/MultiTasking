@@ -1,0 +1,46 @@
+<!-- <p>structural-directive works!</p>
+<h2>{{title}}</h2>
+<ul>
+    <li *ngFor="let name of names">
+    {{name}}
+    </li>
+</ul>
+<ul>
+    <li *ngFor="let detail of details">
+    {{detail.name}} {{ detail.age }} {{ detail.gender }}
+    </li>
+</ul> -->
+
+<div>
+    <div>
+        {{title}}
+    </div>
+    <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let detail of details">
+                        <td>{{detail.name}}</td>
+                        <td>{{detail.age}}</td>
+                        <td>{{detail.gender}}</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+</div>
+
+
+<input type="checkbox" [(ngModel)]="isMale">
+<p *ngIf="isMale; then truestatement ; else falsestatement"></p>
+<ng-template #truestatement>
+    <h1>This is Male</h1>
+</ng-template>
+<ng-template #falsestatement>
+    <h1>This is Female</h1>
+</ng-template>

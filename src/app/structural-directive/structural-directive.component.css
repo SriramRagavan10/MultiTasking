@@ -1,0 +1,22 @@
+div {
+    text-align: center;
+}
+table {
+    width: 70%;
+}
+tbody{
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid;
+    padding: 6px;
+}
+th {
+    background-color: aqua;
+}
+td {
+    background-color: antiquewhite;
+}
